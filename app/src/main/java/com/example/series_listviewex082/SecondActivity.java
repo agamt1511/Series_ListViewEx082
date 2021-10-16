@@ -48,12 +48,13 @@ public class SecondActivity extends AppCompatActivity implements AdapterView.OnI
         fOrgan = ri.getFloatExtra("fOrgan", 0);
         srm = ri.getFloatExtra("srm", 0);
         oSeries = ri.getBooleanExtra("oSeries",true);
+
+        tv2.setText("X1 = " + fOrgan);
+        tv3.setText("d = " + srm);
     }
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        tv2.setText("X1 = " + fOrgan);
-        tv3.setText("d = " + srm);
         tv4.setText("n = " + (position + 1));
         if (oSeries == false){
             tv5.setText("Sn = " + fOrgan*(position + 1));
