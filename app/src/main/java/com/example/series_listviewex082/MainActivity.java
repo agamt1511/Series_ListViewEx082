@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 import android.widget.ToggleButton;
 
 public class MainActivity extends AppCompatActivity {
@@ -15,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     Button btn1;
     Intent si;
     String st1, st2;
-    float fOrgan, srm;
+    double fOrgan, srm;
     boolean oSeries;
 
     @Override
@@ -32,10 +33,15 @@ public class MainActivity extends AppCompatActivity {
 
     public void goResults(View view) {
         st1 = et1.getText().toString();
-        fOrgan = Float.valueOf(st1);
         st2 = et2.getText().toString();
-        srm = Float.valueOf(st2);
-        oSeries = tb1.isChecked();
+        if((st1.equals(""))&& (st2.equals("")))
+        {
+            Toast.makeText(this,"Did not enter text!",Toast.LENGTH_LONG).show();
+        }
+        else {
+            fOrgan = Double.valueOf(st1);
+            srm = Double.valueOf(st2);
+            oSeries = tb1.isChecked();}
 
         si.putExtra("fOrgan", fOrgan);
         si.putExtra("srm", srm);

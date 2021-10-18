@@ -1,27 +1,4 @@
 <resources>
     <string name="app_name">Series_ListViewEx082</string>
 
-    <string-array name="organs">
-        <item >organ1</item>
-        <item >organ2</item>
-        <item >organ3</item>
-        <item >organ4</item>
-        <item >organ5</item>
-        <item >organ6</item>
-        <item >organ7</item>
-        <item >organ8</item>
-        <item >organ9</item>
-        <item >organ10</item>
-        <item >organ11</item>
-        <item >organ12</item>
-        <item >organ13</item>
-        <item >organ14</item>
-        <item >organ15</item>
-        <item >organ16</item>
-        <item >organ17</item>
-        <item >organ18</item>
-        <item >organ19</item>
-        <item >organ20</item>
-        </string-array>
-
 </resources>
