@@ -71,7 +71,7 @@ public class SecondActivity extends AppCompatActivity implements AdapterView.OnI
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         place = (String.valueOf(position+1));
-        tv4.setText(place);
+        tv4.setText("n = " + place);
         tv5.setText("Sn = " + sum[position]);
     }
 

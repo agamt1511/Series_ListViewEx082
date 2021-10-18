@@ -52,7 +52,7 @@
             android:background="#D1C4E9"
             android:text="ToggleButton"
             android:textColor="#37474F"
-            android:textOff="Invoice Series"
+            android:textOff="Arithmetic Series"
             android:textOn="Engineering Series" />
 
         <Space
